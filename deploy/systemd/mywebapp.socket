@@ -1,0 +1,11 @@
+[Unit]
+Description=mywebapp socket activation
+After=network.target
+
+[Socket]
+ListenStream=/run/mywebapp.sock
+SocketUser=mywebapp
+SocketMode=0600
+
+[Install]
+WantedBy=sockets.target

@@ -1,0 +1,23 @@
+[Unit]
+Description=mywebapp Simple Inventory Service
+After=network.target postgresql.service
+
+[Service]
+Type=simple
+User=mywebapp
+Group=mywebapp
+
+ExecStartPre=/usr/bin/python3 /opt/mywebapp/migrate.py
+ExecStart=/usr/bin/java \
+    -jar /opt/mywebapp/mywebapp.jar \
+    --spring.config.location=/etc/mywebapp/config.yaml
+
+Restart=on-failure
+RestartSec=5
+
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=mywebapp
+
+[Install]
+WantedBy=multi-user.target
