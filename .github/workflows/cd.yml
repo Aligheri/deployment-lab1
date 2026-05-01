@@ -30,6 +30,7 @@ jobs:
       - name: Deploy image on target node
         env:
           TARGET_HOST: ${{ secrets.TARGET_HOST }}
+          TARGET_PORT: ${{ secrets.TARGET_PORT }}
           TARGET_USER: ${{ secrets.TARGET_USER }}
           IMAGE_TAG: ${{ github.event.workflow_run.head_branch }}
           CR_PAT: ${{ secrets.CR_PAT }}
@@ -37,6 +38,7 @@ jobs:
         run: |
           ssh -o StrictHostKeyChecking=no \
               -i ~/.ssh/target_key \
+              -p "${TARGET_PORT}" \
               "${TARGET_USER}@${TARGET_HOST}" \
               "IMAGE_TAG=${IMAGE_TAG} CR_PAT=${CR_PAT} GHCR_USER=${GHCR_USER} bash -s" \
               < lab3/deploy/deploy.sh
@@ -62,10 +64,12 @@ jobs:
       - name: Run verification on target node
         env:
           TARGET_HOST: ${{ secrets.TARGET_HOST }}
+          TARGET_PORT: ${{ secrets.TARGET_PORT }}
           TARGET_USER: ${{ secrets.TARGET_USER }}
         run: |
           ssh -o StrictHostKeyChecking=no \
               -i ~/.ssh/target_key \
+              -p "${TARGET_PORT}" \
               "${TARGET_USER}@${TARGET_HOST}" \
               'TARGET_HOST=localhost bash -s' \
               < lab3/verify.sh
