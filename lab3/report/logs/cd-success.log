@@ -1,0 +1,294 @@
+Deploy to target node	Set up job	﻿2026-05-02T00:16:33.9229312Z Current runner version: '2.334.0'
+Deploy to target node	Set up job	2026-05-02T00:16:33.9251183Z Runner name: 'deploy-runner'
+Deploy to target node	Set up job	2026-05-02T00:16:33.9253088Z Runner group name: 'Default'
+Deploy to target node	Set up job	2026-05-02T00:16:33.9254476Z Machine name: 'lima-runner'
+Deploy to target node	Set up job	2026-05-02T00:16:33.9261064Z ##[group]GITHUB_TOKEN Permissions
+Deploy to target node	Set up job	2026-05-02T00:16:33.9269612Z Contents: read
+Deploy to target node	Set up job	2026-05-02T00:16:33.9270295Z Metadata: read
+Deploy to target node	Set up job	2026-05-02T00:16:33.9270914Z Packages: read
+Deploy to target node	Set up job	2026-05-02T00:16:33.9271529Z ##[endgroup]
+Deploy to target node	Set up job	2026-05-02T00:16:33.9274086Z Secret source: Actions
+Deploy to target node	Set up job	2026-05-02T00:16:33.9275131Z Prepare workflow directory
+Deploy to target node	Set up job	2026-05-02T00:16:34.0392321Z Prepare all required actions
+Deploy to target node	Set up job	2026-05-02T00:16:34.0499987Z Getting action download info
+Deploy to target node	Set up job	2026-05-02T00:16:34.6935231Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+Deploy to target node	Set up job	2026-05-02T00:16:35.6437271Z Complete job name: Deploy to target node
+Deploy to target node	Run actions/checkout@v4	﻿2026-05-02T00:16:35.7637435Z ##[group]Run actions/checkout@v4
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:35.7638777Z with:
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:35.7639553Z   ref: 8316c723004aa7898e024c7c85eff3aabf9f6e2c
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:35.7640624Z   repository: Aligheri/deployment-lab1
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:35.7641948Z   token: ***
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:35.7642760Z   ssh-strict: true
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:35.7643564Z   ssh-user: git
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:35.7644294Z   persist-credentials: true
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:35.7645126Z   clean: true
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:35.7645873Z   sparse-checkout-cone-mode: true
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:35.7646755Z   fetch-depth: 1
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:35.7647607Z   fetch-tags: false
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:35.7648362Z   show-progress: true
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:35.7649122Z   lfs: false
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:35.7649866Z   submodules: false
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:35.7650657Z   set-safe-directory: true
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:35.7651641Z env:
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:35.7652317Z   REGISTRY: ghcr.io
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:35.7653111Z   IMAGE_NAME: Aligheri/deployment-lab1
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:35.7653987Z ##[endgroup]
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:36.2871149Z Syncing repository: Aligheri/deployment-lab1
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:36.2873795Z ##[group]Getting Git version info
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:36.2875009Z Working directory is '/opt/actions-runner/_work/deployment-lab1/deployment-lab1'
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:36.2876655Z [command]/usr/bin/git version
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:36.3023497Z git version 2.43.0
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:36.3065193Z ##[endgroup]
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:36.3097221Z Temporarily overriding HOME='/opt/actions-runner/_work/_temp/fb5a439b-5962-427b-b29c-1273ef4b2f53' before making global git config changes
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:36.3099120Z Adding repository directory to the temporary git global config as a safe directory
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:36.3128148Z [command]/usr/bin/git config --global --add safe.directory /opt/actions-runner/_work/deployment-lab1/deployment-lab1
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:36.3238916Z [command]/usr/bin/git config --local --get remote.origin.url
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:36.3279494Z https://github.com/Aligheri/deployment-lab1
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:36.3303281Z ##[group]Removing previously created refs, to avoid conflicts
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:36.3307662Z [command]/usr/bin/git rev-parse --symbolic-full-name --verify --quiet HEAD
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:36.3364410Z HEAD
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:36.3413215Z ##[endgroup]
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:36.3415984Z [command]/usr/bin/git submodule status
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:36.3911574Z ##[group]Cleaning the repository
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:36.3914094Z [command]/usr/bin/git clean -ffdx
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:36.4038625Z [command]/usr/bin/git reset --hard HEAD
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:36.4133675Z HEAD is now at 5a1688d Merge branch 'main' of https://github.com/Aligheri/deployment-lab1
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:36.4138082Z ##[endgroup]
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:36.4139557Z ##[group]Disabling automatic garbage collection
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:36.4146719Z [command]/usr/bin/git config --local gc.auto 0
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:36.4169227Z ##[endgroup]
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:36.4170470Z ##[group]Setting up auth
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:36.4175400Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:36.4202371Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:36.4415406Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:36.4440001Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:36.4699312Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:36.4721935Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:36.4977834Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:36.5034180Z ##[endgroup]
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:36.5035734Z ##[group]Fetching the repository
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:36.5041380Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin 8316c723004aa7898e024c7c85eff3aabf9f6e2c
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:37.3566310Z From https://github.com/Aligheri/deployment-lab1
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:37.3569241Z  * branch            8316c723004aa7898e024c7c85eff3aabf9f6e2c -> FETCH_HEAD
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:37.3591634Z ##[endgroup]
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:37.3593678Z ##[group]Determining the checkout info
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:37.3595454Z ##[endgroup]
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:37.3599809Z [command]/usr/bin/git sparse-checkout disable
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:37.3645327Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:37.3712003Z ##[group]Checking out the ref
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:37.3713925Z [command]/usr/bin/git checkout --progress --force 8316c723004aa7898e024c7c85eff3aabf9f6e2c
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:37.3802730Z Warning: you are leaving 1 commit behind, not connected to
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:37.3809654Z any of your branches:
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:37.3810329Z 
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:37.3811318Z   5a1688d Merge branch 'main' of https://github.com/Aligheri/deployment-lab1
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:37.3812749Z 
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:37.3813796Z If you want to keep it by creating a new branch, this may be a good time
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:37.3815657Z to do so with:
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:37.3816258Z 
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:37.3817081Z  git branch <new-branch-name> 5a1688d
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:37.3818206Z 
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:37.3910664Z HEAD is now at 8316c72 fix: grant table privileges to app db user in setup script
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:37.3917208Z ##[endgroup]
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:37.3944943Z [command]/usr/bin/git log -1 --format=%H
+Deploy to target node	Run actions/checkout@v4	2026-05-02T00:16:37.3961538Z 8316c723004aa7898e024c7c85eff3aabf9f6e2c
+Deploy to target node	Set up SSH key	﻿2026-05-02T00:16:37.4384775Z ##[group]Run mkdir -p ~/.ssh
+Deploy to target node	Set up SSH key	2026-05-02T00:16:37.4386356Z [36;1mmkdir -p ~/.ssh[0m
+Deploy to target node	Set up SSH key	2026-05-02T00:16:37.4388316Z [36;1mecho "***[0m
+Deploy to target node	Set up SSH key	2026-05-02T00:16:37.4390514Z [36;1m***[0m
+Deploy to target node	Set up SSH key	2026-05-02T00:16:37.4392462Z [36;1m***[0m
+Deploy to target node	Set up SSH key	2026-05-02T00:16:37.4394411Z [36;1m***[0m
+Deploy to target node	Set up SSH key	2026-05-02T00:16:37.4396266Z [36;1m***[0m
+Deploy to target node	Set up SSH key	2026-05-02T00:16:37.4397901Z [36;1m***[0m
+Deploy to target node	Set up SSH key	2026-05-02T00:16:37.4399367Z [36;1m***" > ~/.ssh/target_key[0m
+Deploy to target node	Set up SSH key	2026-05-02T00:16:37.4400812Z [36;1mchmod 600 ~/.ssh/target_key[0m
+Deploy to target node	Set up SSH key	2026-05-02T00:16:37.4454580Z shell: /usr/bin/bash -e {0}
+Deploy to target node	Set up SSH key	2026-05-02T00:16:37.4455892Z env:
+Deploy to target node	Set up SSH key	2026-05-02T00:16:37.4457079Z   REGISTRY: ghcr.io
+Deploy to target node	Set up SSH key	2026-05-02T00:16:37.4458337Z   IMAGE_NAME: Aligheri/deployment-lab1
+Deploy to target node	Set up SSH key	2026-05-02T00:16:37.4460076Z ##[endgroup]
+Deploy to target node	Deploy image on target node	﻿2026-05-02T00:16:37.4689616Z ##[group]Run ssh -o StrictHostKeyChecking=no \
+Deploy to target node	Deploy image on target node	2026-05-02T00:16:37.4691356Z [36;1mssh -o StrictHostKeyChecking=no \[0m
+Deploy to target node	Deploy image on target node	2026-05-02T00:16:37.4692802Z [36;1m    -i ~/.ssh/target_key \[0m
+Deploy to target node	Deploy image on target node	2026-05-02T00:16:37.4694124Z [36;1m    -p "${TARGET_PORT}" \[0m
+Deploy to target node	Deploy image on target node	2026-05-02T00:16:37.4695562Z [36;1m    "${TARGET_USER}@${TARGET_HOST}" \[0m
+Deploy to target node	Deploy image on target node	2026-05-02T00:16:37.4697676Z [36;1m    "IMAGE_TAG=${IMAGE_TAG} CR_PAT=${CR_PAT} GHCR_USER=${GHCR_USER} bash -s" \[0m
+Deploy to target node	Deploy image on target node	2026-05-02T00:16:37.4699655Z [36;1m    < lab3/deploy/deploy.sh[0m
+Deploy to target node	Deploy image on target node	2026-05-02T00:16:37.4720285Z shell: /usr/bin/bash -e {0}
+Deploy to target node	Deploy image on target node	2026-05-02T00:16:37.4721507Z env:
+Deploy to target node	Deploy image on target node	2026-05-02T00:16:37.4722679Z   REGISTRY: ghcr.io
+Deploy to target node	Deploy image on target node	2026-05-02T00:16:37.4723831Z   IMAGE_NAME: Aligheri/deployment-lab1
+Deploy to target node	Deploy image on target node	2026-05-02T00:16:37.4725508Z   TARGET_HOST: ***
+Deploy to target node	Deploy image on target node	2026-05-02T00:16:37.4726669Z   TARGET_PORT: ***
+Deploy to target node	Deploy image on target node	2026-05-02T00:16:37.4727931Z   TARGET_USER: ***
+Deploy to target node	Deploy image on target node	2026-05-02T00:16:37.4728974Z   IMAGE_TAG: v1.0.0
+Deploy to target node	Deploy image on target node	2026-05-02T00:16:37.4731449Z   CR_PAT: ***
+Deploy to target node	Deploy image on target node	2026-05-02T00:16:37.4732632Z   GHCR_USER: Aligheri
+Deploy to target node	Deploy image on target node	2026-05-02T00:16:37.4733836Z ##[endgroup]
+Deploy to target node	Deploy image on target node	2026-05-02T00:16:40.0452301Z Deploying ghcr.io/aligheri/deployment-lab1:v1.0.0...
+Deploy to target node	Deploy image on target node	2026-05-02T00:16:41.1660598Z Login Succeeded
+Deploy to target node	Deploy image on target node	2026-05-02T00:16:42.5937788Z v1.0.0: Pulling from aligheri/deployment-lab1
+Deploy to target node	Deploy image on target node	2026-05-02T00:16:43.7742511Z 47c57811f426: Pulling fs layer
+Deploy to target node	Deploy image on target node	2026-05-02T00:16:43.7744391Z 148ddb8f6e68: Pulling fs layer
+Deploy to target node	Deploy image on target node	2026-05-02T00:16:44.2032650Z 6d19b366f7e9: Download complete
+Deploy to target node	Deploy image on target node	2026-05-02T00:16:44.2035091Z 47c57811f426: Download complete
+Deploy to target node	Deploy image on target node	2026-05-02T00:16:44.3034876Z 47c57811f426: Pull complete
+Deploy to target node	Deploy image on target node	2026-05-02T00:16:46.1057333Z 148ddb8f6e68: Download complete
+Deploy to target node	Deploy image on target node	2026-05-02T00:16:47.2081828Z 148ddb8f6e68: Pull complete
+Deploy to target node	Deploy image on target node	2026-05-02T00:16:47.2311282Z Digest: sha256:4a7acb964373691f5e1cea9e01122249a8921c5edf116b6293f8a3797c8dfd0c
+Deploy to target node	Deploy image on target node	2026-05-02T00:16:47.2315374Z Status: Downloaded newer image for ghcr.io/aligheri/deployment-lab1:v1.0.0
+Deploy to target node	Deploy image on target node	2026-05-02T00:16:47.2379688Z ghcr.io/aligheri/deployment-lab1:v1.0.0
+Deploy to target node	Deploy image on target node	2026-05-02T00:16:49.7713848Z Waiting for service to start...
+Deploy to target node	Deploy image on target node	2026-05-02T00:17:01.3860216Z Service is healthy after 12 s
+Deploy to target node	Post Run actions/checkout@v4	﻿2026-05-02T00:17:01.6071462Z Post job cleanup.
+Deploy to target node	Post Run actions/checkout@v4	2026-05-02T00:17:02.3429070Z [command]/usr/bin/git version
+Deploy to target node	Post Run actions/checkout@v4	2026-05-02T00:17:02.3720586Z git version 2.43.0
+Deploy to target node	Post Run actions/checkout@v4	2026-05-02T00:17:02.3853178Z Temporarily overriding HOME='/opt/actions-runner/_work/_temp/1157c08b-41f2-4562-bf2b-a5cf7f935390' before making global git config changes
+Deploy to target node	Post Run actions/checkout@v4	2026-05-02T00:17:02.3854724Z Adding repository directory to the temporary git global config as a safe directory
+Deploy to target node	Post Run actions/checkout@v4	2026-05-02T00:17:02.3865460Z [command]/usr/bin/git config --global --add safe.directory /opt/actions-runner/_work/deployment-lab1/deployment-lab1
+Deploy to target node	Post Run actions/checkout@v4	2026-05-02T00:17:02.4020945Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Deploy to target node	Post Run actions/checkout@v4	2026-05-02T00:17:02.4082628Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Deploy to target node	Post Run actions/checkout@v4	2026-05-02T00:17:02.4697737Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Deploy to target node	Post Run actions/checkout@v4	2026-05-02T00:17:02.4774017Z http.https://github.com/.extraheader
+Deploy to target node	Post Run actions/checkout@v4	2026-05-02T00:17:02.4792305Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+Deploy to target node	Post Run actions/checkout@v4	2026-05-02T00:17:02.4846829Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Deploy to target node	Post Run actions/checkout@v4	2026-05-02T00:17:02.5185985Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Deploy to target node	Post Run actions/checkout@v4	2026-05-02T00:17:02.5223555Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Deploy to target node	Complete job	﻿2026-05-02T00:17:02.6714137Z Cleaning up orphan processes
+Deploy to target node	Complete job	2026-05-02T00:17:02.7844379Z ##[warning]Node.js 20 actions are deprecated. The following actions are running on Node.js 20 and may not work as expected: actions/checkout@v4. Actions will be forced to run with Node.js 24 by default starting June 2nd, 2026. Node.js 20 will be removed from the runner on September 16th, 2026. Please check if updated versions of these actions are available that support Node.js 24. To opt into Node.js 24 now, set the FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true environment variable on the runner or in your workflow file. Once Node.js 24 becomes the default, you can temporarily opt out by setting ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+Verify deployment	Set up job	﻿2026-05-02T00:17:08.5937338Z Current runner version: '2.334.0'
+Verify deployment	Set up job	2026-05-02T00:17:08.5959043Z Runner name: 'deploy-runner'
+Verify deployment	Set up job	2026-05-02T00:17:08.5959971Z Runner group name: 'Default'
+Verify deployment	Set up job	2026-05-02T00:17:08.5961053Z Machine name: 'lima-runner'
+Verify deployment	Set up job	2026-05-02T00:17:08.5964131Z ##[group]GITHUB_TOKEN Permissions
+Verify deployment	Set up job	2026-05-02T00:17:08.5966594Z Contents: read
+Verify deployment	Set up job	2026-05-02T00:17:08.5967454Z Metadata: read
+Verify deployment	Set up job	2026-05-02T00:17:08.5968178Z Packages: read
+Verify deployment	Set up job	2026-05-02T00:17:08.5968904Z ##[endgroup]
+Verify deployment	Set up job	2026-05-02T00:17:08.5971234Z Secret source: Actions
+Verify deployment	Set up job	2026-05-02T00:17:08.5972226Z Prepare workflow directory
+Verify deployment	Set up job	2026-05-02T00:17:08.6540748Z Prepare all required actions
+Verify deployment	Set up job	2026-05-02T00:17:08.6580239Z Getting action download info
+Verify deployment	Set up job	2026-05-02T00:17:09.2675725Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+Verify deployment	Set up job	2026-05-02T00:17:09.9845020Z Complete job name: Verify deployment
+Verify deployment	Run actions/checkout@v4	﻿2026-05-02T00:17:10.0707740Z ##[group]Run actions/checkout@v4
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:10.0709111Z with:
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:10.0709845Z   ref: 8316c723004aa7898e024c7c85eff3aabf9f6e2c
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:10.0710776Z   repository: Aligheri/deployment-lab1
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:10.0711856Z   token: ***
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:10.0712495Z   ssh-strict: true
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:10.0713148Z   ssh-user: git
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:10.0713811Z   persist-credentials: true
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:10.0714527Z   clean: true
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:10.0715192Z   sparse-checkout-cone-mode: true
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:10.0715943Z   fetch-depth: 1
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:10.0716607Z   fetch-tags: false
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:10.0717413Z   show-progress: true
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:10.0718088Z   lfs: false
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:10.0718718Z   submodules: false
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:10.0719370Z   set-safe-directory: true
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:10.0720301Z env:
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:10.0720932Z   REGISTRY: ghcr.io
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:10.0721620Z   IMAGE_NAME: Aligheri/deployment-lab1
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:10.0722417Z ##[endgroup]
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:10.2437564Z Syncing repository: Aligheri/deployment-lab1
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:10.2440743Z ##[group]Getting Git version info
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:10.2442107Z Working directory is '/opt/actions-runner/_work/deployment-lab1/deployment-lab1'
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:10.2443819Z [command]/usr/bin/git version
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:10.2444635Z git version 2.43.0
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:10.2447486Z ##[endgroup]
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:10.2462368Z Temporarily overriding HOME='/opt/actions-runner/_work/_temp/b3d95901-4175-4a67-b012-43a0c6a3a58e' before making global git config changes
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:10.2464689Z Adding repository directory to the temporary git global config as a safe directory
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:10.2466799Z [command]/usr/bin/git config --global --add safe.directory /opt/actions-runner/_work/deployment-lab1/deployment-lab1
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:10.2469748Z [command]/usr/bin/git config --local --get remote.origin.url
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:10.2470966Z https://github.com/Aligheri/deployment-lab1
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:10.2486014Z ##[group]Removing previously created refs, to avoid conflicts
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:10.2491296Z [command]/usr/bin/git rev-parse --symbolic-full-name --verify --quiet HEAD
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:10.2551449Z HEAD
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:10.2594291Z ##[endgroup]
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:10.2595689Z [command]/usr/bin/git submodule status
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:10.2891138Z ##[group]Cleaning the repository
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:10.2894187Z [command]/usr/bin/git clean -ffdx
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:10.2955594Z [command]/usr/bin/git reset --hard HEAD
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:10.3024742Z HEAD is now at 8316c72 fix: grant table privileges to app db user in setup script
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:10.3031642Z ##[endgroup]
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:10.3033030Z ##[group]Disabling automatic garbage collection
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:10.3040687Z [command]/usr/bin/git config --local gc.auto 0
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:10.3083950Z ##[endgroup]
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:10.3085817Z ##[group]Setting up auth
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:10.3091622Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:10.3122763Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:10.3305610Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:10.3340470Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:10.3495152Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:10.3517852Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:10.3690384Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:10.3733566Z ##[endgroup]
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:10.3735283Z ##[group]Fetching the repository
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:10.3743069Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin 8316c723004aa7898e024c7c85eff3aabf9f6e2c
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:11.1830896Z From https://github.com/Aligheri/deployment-lab1
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:11.1835102Z  * branch            8316c723004aa7898e024c7c85eff3aabf9f6e2c -> FETCH_HEAD
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:11.1849468Z ##[endgroup]
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:11.2135525Z ##[group]Determining the checkout info
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:11.2139969Z ##[endgroup]
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:11.2141274Z [command]/usr/bin/git sparse-checkout disable
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:11.2144292Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:11.2148100Z ##[group]Checking out the ref
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:11.2149980Z [command]/usr/bin/git checkout --progress --force 8316c723004aa7898e024c7c85eff3aabf9f6e2c
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:11.2152355Z HEAD is now at 8316c72 fix: grant table privileges to app db user in setup script
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:11.2156496Z ##[endgroup]
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:11.2159455Z [command]/usr/bin/git log -1 --format=%H
+Verify deployment	Run actions/checkout@v4	2026-05-02T00:17:11.2161338Z 8316c723004aa7898e024c7c85eff3aabf9f6e2c
+Verify deployment	Set up SSH key	﻿2026-05-02T00:17:11.2368208Z ##[group]Run mkdir -p ~/.ssh
+Verify deployment	Set up SSH key	2026-05-02T00:17:11.2370571Z [36;1mmkdir -p ~/.ssh[0m
+Verify deployment	Set up SSH key	2026-05-02T00:17:11.2373453Z [36;1mecho "***[0m
+Verify deployment	Set up SSH key	2026-05-02T00:17:11.2376088Z [36;1m***[0m
+Verify deployment	Set up SSH key	2026-05-02T00:17:11.2378438Z [36;1m***[0m
+Verify deployment	Set up SSH key	2026-05-02T00:17:11.2380656Z [36;1m***[0m
+Verify deployment	Set up SSH key	2026-05-02T00:17:11.2382735Z [36;1m***[0m
+Verify deployment	Set up SSH key	2026-05-02T00:17:11.2384322Z [36;1m***[0m
+Verify deployment	Set up SSH key	2026-05-02T00:17:11.2385955Z [36;1m***" > ~/.ssh/target_key[0m
+Verify deployment	Set up SSH key	2026-05-02T00:17:11.2387722Z [36;1mchmod 600 ~/.ssh/target_key[0m
+Verify deployment	Set up SSH key	2026-05-02T00:17:11.2420555Z shell: /usr/bin/bash -e {0}
+Verify deployment	Set up SSH key	2026-05-02T00:17:11.2422042Z env:
+Verify deployment	Set up SSH key	2026-05-02T00:17:11.2423310Z   REGISTRY: ghcr.io
+Verify deployment	Set up SSH key	2026-05-02T00:17:11.2424711Z   IMAGE_NAME: Aligheri/deployment-lab1
+Verify deployment	Set up SSH key	2026-05-02T00:17:11.2440516Z ##[endgroup]
+Verify deployment	Run verification on target node	﻿2026-05-02T00:17:11.2678690Z ##[group]Run ssh -o StrictHostKeyChecking=no \
+Verify deployment	Run verification on target node	2026-05-02T00:17:11.2680935Z [36;1mssh -o StrictHostKeyChecking=no \[0m
+Verify deployment	Run verification on target node	2026-05-02T00:17:11.2682537Z [36;1m    -i ~/.ssh/target_key \[0m
+Verify deployment	Run verification on target node	2026-05-02T00:17:11.2684445Z [36;1m    -p "${TARGET_PORT}" \[0m
+Verify deployment	Run verification on target node	2026-05-02T00:17:11.2686066Z [36;1m    "${TARGET_USER}@${TARGET_HOST}" \[0m
+Verify deployment	Run verification on target node	2026-05-02T00:17:11.2687866Z [36;1m    'TARGET_HOST=localhost bash -s' \[0m
+Verify deployment	Run verification on target node	2026-05-02T00:17:11.2689450Z [36;1m    < lab3/verify.sh[0m
+Verify deployment	Run verification on target node	2026-05-02T00:17:11.2718847Z shell: /usr/bin/bash -e {0}
+Verify deployment	Run verification on target node	2026-05-02T00:17:11.2720147Z env:
+Verify deployment	Run verification on target node	2026-05-02T00:17:11.2721209Z   REGISTRY: ghcr.io
+Verify deployment	Run verification on target node	2026-05-02T00:17:11.2722466Z   IMAGE_NAME: Aligheri/deployment-lab1
+Verify deployment	Run verification on target node	2026-05-02T00:17:11.2724146Z   TARGET_HOST: ***
+Verify deployment	Run verification on target node	2026-05-02T00:17:11.2725387Z   TARGET_PORT: ***
+Verify deployment	Run verification on target node	2026-05-02T00:17:11.2726610Z   TARGET_USER: ***
+Verify deployment	Run verification on target node	2026-05-02T00:17:11.2727918Z ##[endgroup]
+Verify deployment	Run verification on target node	2026-05-02T00:17:11.6051790Z PASS: /health/alive returns 200
+Verify deployment	Run verification on target node	2026-05-02T00:17:11.6586703Z PASS: /health/ready returns 200
+Verify deployment	Run verification on target node	2026-05-02T00:17:12.0659435Z PASS: nginx proxies /items (200)
+Verify deployment	Run verification on target node	2026-05-02T00:17:12.0847549Z PASS: nginx is serving (Server: nginx/1.24.0 (Ubuntu))
+Verify deployment	Run verification on target node	2026-05-02T00:17:12.0933799Z PASS: nginx returns 404 for unknown paths
+Verify deployment	Run verification on target node	2026-05-02T00:17:12.1273820Z PASS: nginx does not expose /health (404)
+Verify deployment	Run verification on target node	2026-05-02T00:17:12.1274801Z 
+Verify deployment	Run verification on target node	2026-05-02T00:17:12.1275891Z All verification checks PASSED
+Verify deployment	Post Run actions/checkout@v4	﻿2026-05-02T00:17:12.1569776Z Post job cleanup.
+Verify deployment	Post Run actions/checkout@v4	2026-05-02T00:17:12.3149436Z [command]/usr/bin/git version
+Verify deployment	Post Run actions/checkout@v4	2026-05-02T00:17:12.3238494Z git version 2.43.0
+Verify deployment	Post Run actions/checkout@v4	2026-05-02T00:17:12.3288222Z Temporarily overriding HOME='/opt/actions-runner/_work/_temp/ad0e79bf-b62a-4a7d-acb8-9a3874288583' before making global git config changes
+Verify deployment	Post Run actions/checkout@v4	2026-05-02T00:17:12.3289328Z Adding repository directory to the temporary git global config as a safe directory
+Verify deployment	Post Run actions/checkout@v4	2026-05-02T00:17:12.3295587Z [command]/usr/bin/git config --global --add safe.directory /opt/actions-runner/_work/deployment-lab1/deployment-lab1
+Verify deployment	Post Run actions/checkout@v4	2026-05-02T00:17:12.3337376Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Verify deployment	Post Run actions/checkout@v4	2026-05-02T00:17:12.3398783Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Verify deployment	Post Run actions/checkout@v4	2026-05-02T00:17:12.3590799Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Verify deployment	Post Run actions/checkout@v4	2026-05-02T00:17:12.3607569Z http.https://github.com/.extraheader
+Verify deployment	Post Run actions/checkout@v4	2026-05-02T00:17:12.3620250Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+Verify deployment	Post Run actions/checkout@v4	2026-05-02T00:17:12.3655451Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Verify deployment	Post Run actions/checkout@v4	2026-05-02T00:17:12.3863136Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Verify deployment	Post Run actions/checkout@v4	2026-05-02T00:17:12.3911595Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Verify deployment	Complete job	﻿2026-05-02T00:17:12.4221159Z Cleaning up orphan processes
+Verify deployment	Complete job	2026-05-02T00:17:12.4651332Z ##[warning]Node.js 20 actions are deprecated. The following actions are running on Node.js 20 and may not work as expected: actions/checkout@v4. Actions will be forced to run with Node.js 24 by default starting June 2nd, 2026. Node.js 20 will be removed from the runner on September 16th, 2026. Please check if updated versions of these actions are available that support Node.js 24. To opt into Node.js 24 now, set the FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true environment variable on the runner or in your workflow file. Once Node.js 24 becomes the default, you can temporarily opt out by setting ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
