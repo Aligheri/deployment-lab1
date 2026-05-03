@@ -47,7 +47,7 @@ usermod -aG docker "${RUNNER_USER}"
 # Download and install runner
 mkdir -p "${RUNNER_DIR}"
 curl -sL \
-    "https://github.com/actions/runner/releases/download/v${RUNNER_VERSION}/actions-runner-linux-x64-${RUNNER_VERSION}.tar.gz" \
+    "https://github.com/actions/runner/releases/download/v${RUNNER_VERSION}/actions-runner-linux-arm64-${RUNNER_VERSION}.tar.gz" \
     | tar -xz -C "${RUNNER_DIR}"
 chown -R "${RUNNER_USER}:${RUNNER_USER}" "${RUNNER_DIR}"
 
