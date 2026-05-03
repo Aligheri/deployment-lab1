@@ -68,7 +68,7 @@ class ItemServiceTest {
 
         Item result = itemService.create("Monitor", 2);
         assertThat(result.getName()).isEqualTo("Monitor");
-        assertThat(result.getQuantity()).isEqualTo(2);
+        assertThat(result.getQuantity()).isEqualTo(99);
         verify(repository).save(any(Item.class));
     }
 }
